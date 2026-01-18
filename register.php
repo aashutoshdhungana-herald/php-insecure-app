@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare($sql);
     $isSuccess = $stmt->execute();
     if ($isSuccess) {
-        header('Location: /insecureapp/index.php');
+        header('Location: /php-insecure-app/index.php');
         exit;
     }
 }

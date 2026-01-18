@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (count($result) > 0) {
         session_start();
         $_SESSION["username"] = $username;
-        header('location: /insecureapp/index.php');
+        header('location: /php-insecure-app/index.php');
         exit;
     } else {
         session_start();

@@ -17,12 +17,12 @@
                 <a class="nav-link" href="#">Home</a>
                 <?php
                 if (!isset($_SESSION["username"])) {
-                    echo '<a class="nav-link" href="/InsecureApp/register.php">Register</a>';
-                    echo '<a class="nav-link" href="/InsecureApp/login.php">LogIn</a>';
+                    echo '<a class="nav-link" href="/php-insecure-app/register.php">Register</a>';
+                    echo '<a class="nav-link" href="/php-insecure-app/login.php">LogIn</a>';
                 } else {
-                    echo '<a class="nav-link" href="/InsecureApp/users.php">Users</a>';
-                    echo '<a class="nav-link" href="/InsecureApp/deleteAccount.php">Delete Account</a>';
-                    echo '<a class="nav-link" href="/InsecureApp/logout.php">Logout</a>';
+                    echo '<a class="nav-link" href="/php-insecure-app/users.php">Users</a>';
+                    echo '<a class="nav-link" href="/php-insecure-app/deleteAccount.php">Delete Account</a>';
+                    echo '<a class="nav-link" href="/php-insecure-app/logout.php">Logout</a>';
                 }
                 ?>
             </div>

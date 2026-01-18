@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["username"])) {
-    header("Location: /INSECUREAPP/login.php");
+    header("Location: /php-insecure-app/login.php");
     exit;
 }
 ?>
